@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    background-color:lightblue;
+}
+
+li{
+    display: flex;
+    list-style:none;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    overflow: hidden;
+}
+
+a{
+   text-decoration: none;
+   color:white ;
+   background-color:black;
+   text-align: center;
+   justify-content: center;
+}
+
+button{
+    border-radius: 25%;
+    font-size: 2.5vh;
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+    height: auto;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+    min-height: 2.5vh;
+    background-color: black;
+}
