@@ -252,31 +252,31 @@ address > a.tabulation{
 
 @font-face {
     font-family: 'rob';
-    src: url(Font/roboto.ttf);
+    src: url(font/roboto.ttf);
 }
 
 @font-face {
     font-family: 'hey';
-    src: url(Font/hey.ttf);
+    src: url(font/hey.ttf);
 }
 
 @font-face {
     font-family: 'vogue';
-    src: url(Font/Vogue.ttf);
+    src: url(font/Vogue.ttf);
 }
 
 @font-face{
     font-family: 'Source';
-    src: url(Font/Source.ttf);
+    src: url(font/Source.ttf);
 }
 
 @font-face{
     font-family: 'Mont';
-    src: url(Font/Montserrat.ttf);
+    src: url(font/Montserrat.ttf);
 }
 @font-face {
     font-family: 'Pop';
-    src: url(Font/Poppins.ttf);
+    src: url(font/Poppins.ttf);
 }
 
 @media screen and (max-width:1300px) {
