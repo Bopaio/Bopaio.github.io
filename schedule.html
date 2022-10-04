@@ -2,22 +2,52 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="schedule.css" media="all" />
+        <meta name="author" content="Thomas PERRIN">
+        <link rel="stylesheet" href="galery.css" media="all">
+        <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+        <script></script>
         <title>Bopa</title>
     </head>
+    
     <body>
         <header>
-            <li><button><a href="home.html">Accueil</a></button></li>
-            <li><button><a href="galery.html">Galerie</a></button></li>
-            <li><button><a href="http://ffaviron.fr">FFAviron</a></button></li>
-            <li><button><a href="store.html">Boutique</a></button></li>
-            <li><button><a href="schedule.html">Agenda</a></button></li>
+            <img src="img/cropped-RCVA-HD.png" id="logo">
+            <ul id="ulnav">
+                <li class="linav"><form action="index.html" method="get"><button>Accueil</button></form></li>
+                <li class="linav"><form action="galery.html" method="get"><button>Galerie</button></form></li>
+                <li class="linav"><form action="schedule.html" method="get"><button>Agenda</button></form></li>
+                <li class="linav"><form action="inscription.html" method="get"><button>S'inscrire</button></form></li>
+                <li class="linav"><form action="http://ffaviron.fr" method="get" target="_blank"><button id="button2">FFAviron</button></form></li>
+                <li><form action="connexion.html" method="get"><button class="connexionbutton"><img src="img/avatar.png" id="avatar">Connexion</button></form></li>
+            </ul>
         </header>
         <main>
-            schedule
+            
         </main>
         <footer>
-                    
+            <div id="basdepage">
+                <div id="contact">
+                    <h4>Nous contacter :</h4>
+                    <br>RCVA
+                    <address>
+                        2907 route du Port,<br>
+                        01250 Hautecourt Romanèche<br>
+                        Secrétaire :  <a href="tel:+336742835">06 03 74 28 35</a> (adhésions, renseignements divers…)<br>
+                        <a href="mailto:secretariat@rcva.club" class="tabulation">secretariat@rcva.club</a><br>
+                        Président :  <a href="tel:+33619824566">06 19 82 45 66</a> (fournisseurs, clubs, administrations…)<br>
+                        <a href="mailto:chambod@rcva.club" class="tabulation">chambod@rcva.club</a><br>
+                    </address>
+                </div>
+                <div id="partenaires">
+                    <h4 id="h4part">Nos partenaires :</h4>
+                    <img src="img/region.jpg" alt="Alternate Text" class="imgpart"/>
+                    <img src="img/cnr.png" alt="Alternate Text" class="imgpart"/>
+                    <img src="img/maif.png" alt="Alternate Text" class="imgpart"/>
+                    <img src="img/intermarche.png" alt="Alternate Text" class="imgpart"/>
+                    <img src="img/ffaviron.jpg" alt="Alternate Text" class="imgpart"/>
+                </div>
+            </div>
+            <div id="copyright">© 2022 | RCVA Tous droits réservés</div>
         </footer>
     </body>
 </html>
