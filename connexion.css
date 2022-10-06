@@ -5,7 +5,7 @@
 }
 *::selection {
     background-color: rgba(83, 0, 0, 0.7);
-    color: #ffffff;
+    color:rgb(255, 255, 255);
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -20,7 +20,6 @@
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(153, 24, 24); 
 }
-
 #ulnav{
     display: flex;
     text-align: center;
@@ -35,7 +34,7 @@
     background-color: black;
     overflow: hidden;
 }
-form{
+.formnav{
     align-self: center;
     text-decoration: none;
     color:white ;
@@ -43,7 +42,7 @@ form{
     text-align: center;
     justify-content: center;
 }
-button{
+.buttonnav{
     width: 100%;
     cursor:pointer;
     color: white;
@@ -60,14 +59,14 @@ button{
     padding: 10px 15px;
     transition: ease 0.7s;
 }
-button:hover{
+.buttonnav:hover{
     background-color: #ffffff;
     color: #000000;
 }
 header{
     display: flex;
     justify-content: center;
-    height: 60px;
+    height: auto;
     min-height: 20px;
     width: 100%;
     background-color: black;
@@ -76,7 +75,7 @@ header{
     margin-top: auto;
     margin-bottom:auto ;
     margin-left: 1%;
-    height: 90%;
+    height: 4em;
     border-radius: 10px;
 }
 #member_connexion{
@@ -115,6 +114,36 @@ p{
     font-family: 'Pop';
 }
 
+
+
+
+#map{
+    border-radius: 2em;
+    border-color: #ff4242;
+    border-style:outset;
+    border-width: 10px;
+}
+#club{
+    justify-content: center;
+    text-align: center;
+}
+#leclub{
+    display: flex;
+    height: auto;
+    padding: 2vh;
+    background-color: #696969;
+    color: white;
+}
+#alieninscri{
+    color: #ff4b4b;
+}
+#papropo{
+    width: 50%;
+    margin: 20px;
+}
+.papropoli{
+    margin-left: 40px;
+}
 footer{
     color: white;
     background-color: black;
@@ -149,7 +178,6 @@ address > a{
 address > a.tabulation{
     margin-left: 80px;
 }
-
 @font-face {
     font-family: 'rob';
     src: url(font/roboto.ttf);
@@ -179,35 +207,61 @@ address > a.tabulation{
     src: url(font/Poppins.ttf);
 }
 
-@media screen and (max-width:1300px) {
-    header{
-        height: 110px;
-    }
-    
+@media only screen and (max-width:1300px) {
     #ulnav{
         flex-wrap: wrap;
+    }
+    #tab_articles{
+        grid-template-columns: 50% 50%;
     }
     #partenaires{
         flex-wrap:wrap;
     }
-    #logo{
-        height: 50%;
-    }
-    
 }
 
-@media screen and (max-width:900px) {
-    #ulnav{
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        width: 100%;
+@media only screen and (max-device-width:768px) {
+    #leclub{
+        flex-direction: column;
+    }
+    #papropo{
+        width: fit-content;
+    }
+    #map{
+        height: 500px;
+        width: 97%;
+    }
+}
+@media only screen and (max-width:768px) {
+    #tab_articles{
+        grid-template-columns: 100%;
+    }
+    #papropo{
+        width: fit-content;
+    }
+    #leclub{
+        flex-direction: column;
+    }
+    #map{
+        height: 500px;
+        width: 97%;
     }
 }
 
-@media screen and (max-width:720px){
-    header{
-        height: 150px;
+@media only screen and (max-device-width:450px){
+    #tab_articles{
+        grid-template-columns: 100%;
+    }
+    #map{
+        height: 500px;
+    }
+    .imgpart{
+        height: 75px;
+        margin: 5px;
+    }
+}
+@media only screen and (max-width:450px){
+    #map{
+        height: 500px;
     }
     .imgpart{
         height: 75px;
