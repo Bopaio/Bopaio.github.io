@@ -14,7 +14,7 @@
     background: #000000; 
 }
 ::-webkit-scrollbar-thumb {
-    background: rgb(220, 53, 53); 
+    background: #ff4949; 
     border-radius: 50px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -109,16 +109,27 @@ h3{
     font-size: 25px;
     font-family: 'Source';
 }
-p{
+h4{
     font-size: 20px;
+    font-family: 'unb';
+}
+p{
+    font-size: 17px;
     font-family: 'Pop';
 }
 #videoheader{
     width: 100%;
 }
+figure {
+	background: linear-gradient(180deg,rgb(255, 255, 255) 0%,transparent 2%);
+}
+figure video {
+	mix-blend-mode: overlay;
+}
+
 .txt_titre{
     margin-top: 10px;
-    background: linear-gradient(180deg,#f32424 25%,#000000 100%);
+    background: linear-gradient(180deg,#ff4949 25%,#000000 100%);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -176,7 +187,7 @@ hr{
 }
 #map{
     border-radius: 2em;
-    border-color: #ff4242;
+    border-color: #ff4949;
     border-style:outset;
     border-width: 10px;
 }
@@ -192,7 +203,7 @@ hr{
     color: white;
 }
 #alieninscri{
-    color: #ff4b4b;
+    color: #ff4949;
 }
 #papropo{
     width: 50%;
@@ -227,10 +238,10 @@ footer{
     margin: 5px;
 }
 #copyright{
-    background-color: #360000;
+    background-color: #470000;
 }
 address > a{
-    color: #ff4b4b;
+    color: #ff4949;
 }
 address > a.tabulation{
     margin-left: 80px;
@@ -262,6 +273,10 @@ address > a.tabulation{
 @font-face {
     font-family: 'Pop';
     src: url(font/Poppins.ttf);
+}
+@font-face {
+    font-family: 'unb';
+    src: url(font/Ubuntu.ttf);
 }
 
 @media only screen and (max-width:1300px) {

@@ -106,15 +106,189 @@ h2{
     font-family: 'hey';
 }
 h3{
-    font-size: 25px;
+    font-size: 35px;
     font-family: 'Source';
 }
-p{
+h4{
     font-size: 20px;
+    font-family: 'unb';
+}
+h5{
+    font-family: 'Mont';
+}
+p{
+    font-size: 17px;
     font-family: 'Pop';
 }
 
+/* main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 66.5vh;
+    height: auto;
+    background-color: #3c3c3c;
+}
 
+#box{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background-color: #696969;
+    border-radius: 8px;
+}
+#box::before{
+    content: '';
+    position: absolute;
+    top:-50%;
+    left:-50%;
+    width: 400px;
+    height: 440px;
+    background: linear-gradient(0deg,transparent,transparent,#18b5e6);
+    transform: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+#box::after{
+    content: '';
+    position: absolute;
+    top:-50%;
+    left:-50%;
+    width: 400px;
+    height: 440px;
+    background: linear-gradient(0deg,transparent,transparent,#18b5e6);
+    transform: bottom right;
+    animation: animate 6s linear infinite;
+    animation: delay -3s;
+} */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #23242a;
+    background-image: url("/img/background-repeat.jpg");
+    background-repeat: repeat;
+}
+.box{
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.box::before{
+    content:'';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,#ff4949,#ff4949);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+.box::after{
+    content:'';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,#ff4949,#ff4949);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.form{
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background-color: #28292d;
+    z-index: 10;
+    padding: 80px 40px;
+    
+    display: flex;
+    flex-direction: column;
+}
+.form h2{
+    color: #ff4949;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.inputBox{
+    position: relative;
+    width: 300px;
+    margin-top: 25px;
+    
+}
+.inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+
+}
+
+.inputBox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #ff4949;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+.inputBox input:valid ~ i,
+.inputBox input:focus ~ i
+{
+    height: 44px;
+}
+.links{
+    display: flex;
+}
+.links a{
+    font-size: 1em;
+    color: #8f8f8f;
+    text-decoration: none;
+    margin: 10px;
+}
+.links a:hover
+{
+    color: #ff4949;
+}
+#btnseconnecter{
+    border: none;
+    outline: none;
+    background: #ff4949;
+    padding: 11px 25px;
+    width: auto;
+    margin: 5px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
 
 
 #map{
@@ -205,6 +379,10 @@ address > a.tabulation{
 @font-face {
     font-family: 'Pop';
     src: url(font/Poppins.ttf);
+}
+@font-face {
+    font-family: 'unb';
+    src: url(font/Ubuntu.ttf);
 }
 
 @media only screen and (max-width:1300px) {
